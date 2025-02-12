@@ -200,7 +200,16 @@ function toggleTax() public {
     // ...
 }
 ```
-	•	Description: Removes function modifiers.
+	•	Description: Removes function modifiers
+
+ 14. Address swap Mutations
+```solidity
+// Original
+address(0xaaaaaaaaaaaaaaaaaaaaa).call();
+// Mutated
+address(0xbbbbbbbbbbbbbbbbbbbbb).call(); // where 0xbbbbbbbbbbbbbbbbbbbbb is another address in the current function
+```
+	•	Description: Swap addresses
 
 Security Foundation
 
